@@ -16,19 +16,16 @@ const Holder = styled.div `
   flex-direction: column;
   justify-content:center;
   align-items:center;
-  width: 100%;
-  height: 100%;
-  margin-top: 30px;
 
 
 `
+const NavHolder = styled.div`
 
+`
 export default function Home() {
   return (
     <Cont>
         <NavBar></NavBar>
-
-
         <Holder>
         <Invite></Invite>
         </Holder>

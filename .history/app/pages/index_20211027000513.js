@@ -5,36 +5,23 @@ import styled from 'styled-components';
 import NavBar from '../comps/NavBar';
 import Invite from '../comps/Invite';
 
-const Cont = styled.div`
-display:flex;
-
-
-`
 const Holder = styled.div `
-
+.container1 {
   display:flex;
   flex-direction: column;
   justify-content:center;
   align-items:center;
-  width: 100%;
-  height: 100%;
-  margin-top: 30px;
-
+  margin-bottom: 100px;
+}
 
 `
-
 export default function Home() {
   return (
-    <Cont>
+    <div className={styles.container}>
         <NavBar></NavBar>
-
-
-        <Holder>
         <Invite></Invite>
-        </Holder>
-       
        
   
-    </Cont>
+    </div>
   )
 }
