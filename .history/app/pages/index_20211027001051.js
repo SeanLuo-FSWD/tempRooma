@@ -17,8 +17,6 @@ const Holder = styled.div `
   justify-content:center;
   align-items:center;
   width: 100%;
-  height: 100%;
-  margin-top: 30px;
 
 
 `
