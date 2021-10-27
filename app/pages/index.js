@@ -1,12 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styled from 'styled-components';
+import React from 'react';
 import NavBar from '../comps/NavBar';
 import Invite from '../comps/Invite';
 import SettingNavCont from '../comps/SettingNavCont';
 import {useState} from 'react';
-
-import React from 'react'
 
 const Cont = styled.div`
   padding:5px;
