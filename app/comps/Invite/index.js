@@ -4,20 +4,17 @@ import styled from 'styled-components';
 const Cont = styled.div`
 display: flex;
 flex-direction: column;
-
 `
 const Head = styled.div`
 font-size: 27px;
 font-weight: 600;
 color: #1E1E1E;
 margin-bottom: 12px;
-
 `
 const Text = styled.div`
 font-size: 20px;
 color: #666666;
 font-weight: 400;
-
 `
 const Copy = styled.button`
 display: flex;

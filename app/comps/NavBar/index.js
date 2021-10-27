@@ -1,20 +1,21 @@
+
 import Image from 'next/image'
 import styled from 'styled-components';
 
 const CtrlCont = styled.div`
-display: flex;
-flex-direction: column;
+display:flex;
+flex-direction:column;
 justify-content:center;
 align-items:center;
-width: 184px;
-height: 1024px;
-border-right-style: solid;
-border-right-color: #B1B1B1 ;
-border-width: 1px;
+width:184px;
+height:1024px;
+border-right-style:solid;
+border-right-color:#B1B1B1;
+border-width:1px;
 `
 const Logo = styled.img`
-width: 50px;
-height: 50px;
+width:50px;
+height:50px;
 margin-top:-150px;
 `
 const IconCont = styled.div`
