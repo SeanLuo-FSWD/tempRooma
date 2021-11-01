@@ -27,7 +27,7 @@ flex-grow:4;
 `
 const Space = styled.div`
 display:flex;
-height:10px
+height:130px
 `
 const RightCont = styled.div`
 display:flex;

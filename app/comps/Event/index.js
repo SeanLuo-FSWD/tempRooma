@@ -63,10 +63,7 @@ const Event = ({
   date="5:00-7:00PM",
   src="/add.png",
   visibility2="hidden",
-  onClick=()=>{
-    opening();
-    closing();
-  },
+  onClick=()=>{},
 
 })=>{
   
