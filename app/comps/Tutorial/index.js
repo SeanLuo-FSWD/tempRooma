@@ -21,7 +21,7 @@ width: ${props=>props.aniwidth};
 `
 
 const Heading = styled.div`
-font-size: 45px;
+font-size: 50px;
 margin-top: 70px;
 font-weight: 700;
 color: #181135;
@@ -31,7 +31,7 @@ color: #724FE9;
 
 `
 const Para = styled.div`
-font-size: 20px;
+font-size: 22px;
 max-width: 350px;
 color: #7E7E7E;
 margin-top: 20px;
