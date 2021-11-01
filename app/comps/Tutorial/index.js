@@ -57,7 +57,8 @@ background-color: ${props=>props.buttoncolor};
 `
 const Tutorial = ({
 animation="/login-animation.svg",
-head="Welcome",
+chead="Welcome",
+bhead="Back",
 para="Start distributing chores with your roommates and have fun!",
 aniwidth="550px",
 buttoncolor1="#724FE9",
@@ -71,7 +72,7 @@ buttondisplay="none"
     return <Cont>
         <Wrap>
         <Animation aniwidth={aniwidth} src={animation}/>
-        <Heading className="ubuntu"><Span>{head}</Span> Back</Heading>
+        <Heading className="ubuntu"><Span>{chead}</Span>{bhead}</Heading>
         <Para className="opensans">{para}</Para>
 
         <ButtonCont buttondisplay={buttondisplay}>
