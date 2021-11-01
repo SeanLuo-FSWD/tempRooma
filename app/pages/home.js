@@ -7,6 +7,7 @@ import Reminder from '../comps/Reminder';
 import Completed from '../comps/Completed';
 import WeeklyRewards from '../comps/WeeklyRewards';
 import CalendarComp from '../comps/CalendarComp';
+import Event from '../comps/Event';
 
 
 const MainCont = styled.div`
@@ -24,13 +25,25 @@ display:flex;
 flex-direction:column;
 flex-grow:4;
 `
+const Space = styled.div`
+display:flex;
+height:10px
+`
 const RightCont = styled.div`
 display:flex;
 flex-direction:column;
 flex-grow:2;
 `
+
 export default function Home (){
+  // detect button clicked or not
+  const [buttonstate1, setButtonState1] = useState(0);
   
+  const HandleClick = () =>{
+    setButtonState1(1);
+    
+  }
+
   return (<MainCont>
     <LeftCont>
     <NavBar/>
@@ -48,6 +61,7 @@ export default function Home (){
     visibility="hidden"
     />
     <Completed/>
+    <Space></Space>
     <WeeklyRewards
     src="/Avatar.png"
     user_name="Ester Howards"
@@ -56,6 +70,23 @@ export default function Home (){
     </MiddleCont>
     <RightCont>
       <CalendarComp/>
+     <Event
+      height="550px"
+      day="Oct8"
+      week="Thrusday"
+      bgcolor="rgba(240,199,137,30%)"
+      visibility="visible"
+      task_name="Event Name"
+      vlcolor="#F0C789"
+      name="Name"
+      date="5:00-7:00PM"
+      onClick={() =>{
+        HandleClick();
+      }} 
+      visibility={buttonstate1 === 1 ? 'hidden' : 'visible'}
+      src={buttonstate1 === 1 ? '/add_rotate.png': '/add.png'}
+      visibility2={buttonstate1 ===1 ? 'visible': 'hidden'}
+     />
     </RightCont>
   </MainCont>
   )
