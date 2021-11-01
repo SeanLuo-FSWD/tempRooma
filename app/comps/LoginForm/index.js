@@ -26,7 +26,7 @@ margin-top: 100px;
 const Heading =styled.div`
 font-size: 53px;
 font-weight: 700;
-margin-bottom: 50px;
+margin-bottom: 30px;
 
 `
 
