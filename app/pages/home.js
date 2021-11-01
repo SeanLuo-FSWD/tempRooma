@@ -6,6 +6,8 @@ import Greeting from '../comps/Greeting';
 import Reminder from '../comps/Reminder';
 import Completed from '../comps/Completed';
 import WeeklyRewards from '../comps/WeeklyRewards';
+import CalendarComp from '../comps/CalendarComp';
+
 
 const MainCont = styled.div`
   display:flex;
@@ -28,7 +30,7 @@ flex-direction:column;
 flex-grow:2;
 `
 export default function Home (){
-
+  
   return (<MainCont>
     <LeftCont>
     <NavBar/>
@@ -46,10 +48,14 @@ export default function Home (){
     visibility="hidden"
     />
     <Completed/>
-    <WeeklyRewards/>
+    <WeeklyRewards
+    src="/Avatar.png"
+    user_name="Ester Howards"
+    user_point="0 pts"
+    />
     </MiddleCont>
     <RightCont>
-
+      <CalendarComp/>
     </RightCont>
   </MainCont>
   )

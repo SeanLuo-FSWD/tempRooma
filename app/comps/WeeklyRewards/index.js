@@ -22,12 +22,18 @@ flex-direction:row;
 `
 
 const WeeklyRewards = ({
-
+  src="/Avatar.png",
+  user_name="User Name",
+  user_point="0 pts"
 })=>{
   return<Cont>
     <Heading>Weekly Rewards</Heading>
     <UserCont>
-    <WeeklyUserCont/>
+    <WeeklyUserCont
+    src={src}
+    user_name={user_name}
+    user_point={user_point}
+    />
     </UserCont>
   </Cont>
 }

@@ -35,7 +35,8 @@ margin-bottom:20px;
 
 const WeeklyUserCont = ({
 src="/Avatar.png",
-user_name="User Name"
+user_name="User Name",
+user_point="0 pts",
 })=>{
   return<Cont>
     <Avatar src={src}/>
@@ -44,7 +45,7 @@ user_name="User Name"
       <PointCont
       width="100px"
       height="35px"
-      user_point="0 pts"
+      user_point={user_point}
       />
     </UserInfoBox>
   </Cont>
