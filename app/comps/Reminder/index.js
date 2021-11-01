@@ -33,7 +33,7 @@ const More = styled.div`
 width:685px;
 text-align:center;
 position:absolute;
-top:410px;
+top:400px;
 color:#7751E8;
 `
 const Divider = styled.hr`
