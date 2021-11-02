@@ -23,7 +23,6 @@ const MainCont = styled.div`
   margin-left:300px;
   flex-direction:column;
 `
-
 export default function Community() {
 
   /*const [buttonstate1, setButtonState1] = useState(0);
