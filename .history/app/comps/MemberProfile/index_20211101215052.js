@@ -1,0 +1,111 @@
+import react from 'react';
+import styled from 'styled-components';
+
+const Cont = styled.div`
+display:flex;
+width: 500px;
+height:200px;
+box-shadow: none;
+border-radius: 21.6276px;
+margin-left: 20px;
+margin-bottom: 30px;
+
+
+`
+
+const CardCont = styled.div`
+width: 100%;
+height: 100%;
+display:flex;
+justify-content: center;
+align-items:center;
+
+`
+const Avatar = styled.img`
+width: 100px;
+height: 100px;
+margin-right: 40px;
+`
+
+const InfoCont=styled.div`
+display:flex;
+flex-direction: column;
+`
+const Name = styled.div`
+font-size: 25px;
+font-weight: 700;
+color: #181135;
+margin-bottom: 2px;
+`
+const Phone=styled.div`
+font-size: 18px;
+color:#7E7E7E;
+margin-bottom: 15px;
+
+`
+const Icon = styled.img`
+margin-right: 10px;
+width: 14px;
+`
+
+const ButtonCont=styled.div`
+display:flex;
+margin-top: 5px;
+`
+const Point = styled.div`
+display:flex;
+justify-content: center;
+align-items:center;
+border-radius: 28.8985px;
+width: 100px;
+height:40px;
+background: linear-gradient(90deg, #9351E8 0%, #6853E9 51.56%, #504EDB 100%);
+font-size: 16px;
+color:white;
+font-weight: 600;
+margin-right: 10px;
+
+
+`
+
+const Message = styled.button`
+display:flex;
+justify-content: center;
+align-items:center;
+border-radius: 28.8985px;
+background-color: transparent;
+font-size: 16px;
+width: 100px;
+height:40px;
+border: 1px solid #7751E8;
+color: #7751E8;
+font-weight: 600;
+`
+
+
+const MembersProfile= ({
+avatar="/Avatar2.png",
+name="Esther Howard",
+phone="(603) 555-0123",
+points="0 pts"
+
+})=>{
+  return<Cont>
+    <CardCont>
+   <Avatar src="/Avatar.png"/>
+   
+   <InfoCont>
+   <Name className="opensans">{name}</Name>
+   <Phone className="opensans">
+     <Icon src="/phone.svg"/>
+     {phone}</Phone>
+
+   <ButtonCont>
+   <Point className="opensans">{points}</Point>
+   <Message className="opensans">Message</Message>
+   </ButtonCont>
+   </InfoCont>
+   </CardCont>
+  </Cont>
+}
+export default MembersProfile
