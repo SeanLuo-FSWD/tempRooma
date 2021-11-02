@@ -7,7 +7,7 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-width:184px;
+width:130px;
 height:1024px;
 border-right-style:solid;
 border-right-color:#B1B1B1;
@@ -17,6 +17,7 @@ const Logo = styled.img`
 width:50px;
 height:50px;
 margin-top:-150px;
+margin-bottom:100px;
 `
 const IconCont = styled.div`
 display: flex;
@@ -30,7 +31,15 @@ margin: 50px;
 const Icon = styled.img`
 width: 30px;
 height: 30px;
-margin: 20px;
+margin-bottom: 70px;
+`
+
+const SetIcon = styled.img`
+width: 30px;
+height: 30px;
+margin-top:165px;
+margin-bottom: -165px;
+
 `
 const NavBar = ({
 
@@ -44,7 +53,7 @@ const NavBar = ({
                     <Icon src="/Members_Icon.svg"/>
                     <Icon src="/Community_Icon.svg"/>
                 </IconCont>
-                <Icon src="/Settings_Icon.svg"></Icon>
+                <SetIcon src="/Settings_Icon.svg"></SetIcon>
             </CtrlCont>   
 }
 export default NavBar;
