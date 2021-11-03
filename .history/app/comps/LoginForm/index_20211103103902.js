@@ -79,7 +79,6 @@ background-color: #724FE9;
 color: white;
 font-size: 20px;
 font-weight: 700;
-margin-top: 20px;
 `
 
 // OR divider
@@ -128,10 +127,10 @@ margin-right: 20px;
 const Signup = styled.div`
 display:flex;
 justify-content: center;
-font-size: 16px;
+font-size: 20px;
 width: 70%;
-margin-top: 20px;
-
+position: relative;
+top: 150px;
 `
 
 const Text = styled.div`
@@ -140,7 +139,7 @@ color: #757272;
 const Link2 = styled.button`
 background-color: transparent;
 border:none;
-font-size: 16px;
+font-size: 20px;
 color: #724FE9;
 font-weight: 700;
 
@@ -150,45 +149,32 @@ font-weight: 700;
 
 const LoginForm = ({
 marginbottom1="25px",
-marginbottom2="25px",
-marginbottom3="10px",
-routeToJoin="/join",
-routeToLogin="/",
+marginbottom2="10px",
+routeToHome="/home",
+routeToSignup="/signup"
 
 
 
 }) => {
    
-
     const router = useRouter();
+
     return <Main>
     <Cont>
-        <Heading className="ubuntu">Sign Up</Heading>
+        <Heading className="ubuntu">Login</Heading>
         {/* user input */}
         <Label className="opensans">
-            Name*
-        <Input marginbottom={marginbottom1} className="opensans" type="text" placeholder="Name"  ></Input>
+            Email
+        <Input marginbottom={marginbottom1} className="opensans" type="text" placeholder="Email"  ></Input>
         </Label>
         <Label className="opensans">
-            Email*
-        <Input marginbottom={marginbottom2} className="opensans" type="text" placeholder="Email"  ></Input>
+            Password
+        <Input marginbottom={marginbottom2} className="opensans" type="password" placeholder="Password"  ></Input>
         </Label>
-        
-        <Label className="opensans">
-           Password*
-        <Input marginbottom={marginbottom3} className="opensans" type="password" placeholder="Password"  ></Input>
-        </Label>
-        
-       
+        <Link className="opensans">Forgot Password?</Link>
 
         {/* Login Button */}
-        <LoginButton onClick={()=>router.push(routeToJoin)} className="opensans">Sign up</LoginButton>
-
-        <Signup className="opensans">
-       <Text> Already have an account?</Text>
-        <Link2 onClick={()=>router.push(routeToLogin)}>Sign In</Link2>
-        </Signup>
-
+        <LoginButton onClick={()=>router.push(routeToHome)} className="opensans">Login</LoginButton>
 
         <Divider>
             
@@ -200,7 +186,10 @@ routeToLogin="/",
             <Icon src="/Google.svg"/>
             Login with Google</GoogleButton>
           
-            
+            <Signup onClick={()=>router.push(routeToSignup)} className="opensans">
+       <Text> Not registered yet?</Text>
+        <Link2>Create an Account</Link2>
+        </Signup>
 
     
  </Cont>

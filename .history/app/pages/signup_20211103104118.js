@@ -28,7 +28,6 @@ width: 100px;
 margin: 20px;
 position:absolute;
 top: 10px;
-margin: 20px 20px 0px 30px;
 
 `
 const RightCont = styled.div`

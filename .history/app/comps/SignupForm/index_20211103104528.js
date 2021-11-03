@@ -186,7 +186,7 @@ routeToLogin="/",
 
         <Signup className="opensans">
        <Text> Already have an account?</Text>
-        <Link2 onClick={()=>router.push(routeToLogin)}>Sign In</Link2>
+        <Link2>Sign In</Link2>
         </Signup>
 
 

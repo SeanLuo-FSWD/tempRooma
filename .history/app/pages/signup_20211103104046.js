@@ -28,7 +28,6 @@ width: 100px;
 margin: 20px;
 position:absolute;
 top: 10px;
-margin: 20px 20px 0px 30px;
 
 `
 const RightCont = styled.div`
@@ -38,7 +37,7 @@ flex:1;
 
 `
 
-export default function Signup() {
+export default function Login() {
 
   
   return (
@@ -53,7 +52,7 @@ export default function Signup() {
              />
         </LeftCont>
         <RightCont>
-            <SignupForm/>
+            <SignupForm login="signup"/>
         </RightCont>
 
       

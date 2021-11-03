@@ -73,12 +73,12 @@ const NavBar = ({
                 <Logo src="/Logo.png"/>
                     <MainIcons>
                     <Icon  onClick={()=>router.push(routeToHome)} src="/Home_Icon.svg"/>
-                    <Icon onClick={()=>router.push(routeToTask)} src="/Task_Icon.svg"/>
-                    <Icon onClick={()=>router.push(routeToChat)} src="/Chat_Icon.svg"/>
-                    <Icon onClick={()=>router.push(routeToMembers)} src="/Members_Icon.svg"/>
-                    <Icon onClick={()=>router.push(routeToCommunity)} src="/search.svg"/>
+                    <Icon src="/Task_Icon.svg"/>
+                    <Icon src="/Chat_Icon.svg"/>
+                    <Icon src="/Members_Icon.svg"/>
+                    <Icon src="/search.svg"/>
                     </MainIcons>
-                    <SetIcon onClick={()=>router.push(routeToSettings)} src="/Settings_Icon.svg"></SetIcon>
+                    <SetIcon src="/Settings_Icon.svg"></SetIcon>
                 </IconCont>
                 
     
