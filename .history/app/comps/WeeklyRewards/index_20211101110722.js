@@ -27,7 +27,7 @@ const WeeklyRewards = ({
   user_point="0 pts"
 })=>{
   return<Cont>
-    <Heading className="opensans">Weekly Rewards</Heading>
+    <Heading>Weekly Rewards</Heading>
     <UserCont>
     <WeeklyUserCont
     src={src}

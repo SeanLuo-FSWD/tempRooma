@@ -8,72 +8,51 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 width:130px;
-height:100vh;
+height:200%;
 box-shadow: 0px 4.0133771896362305px 11.036787033081055px 0px #00000014;
 
 `
-
 const Logo = styled.img`
 width:50px;
 height:50px;
-display:flex;
-position:relative;
-bottom: 120px;
-
+margin-top:-150px;
+margin-bottom:100px;
 `
 const IconCont = styled.div`
 display: flex;
 flex-direction: column;
 justify-content:center;
 align-items:center;
-width: 100%;
-height: 100%;
-position: relative;
-
-
-
+width: 184px;
+height: 478px;
+margin: 50px;
 `
 const Icon = styled.img`
 width: 30px;
 height: 30px;
+margin-bottom: 70px;
 `
 
 const SetIcon = styled.img`
 width: 30px;
 height: 30px;
-display:flex;
-position: relative;
-top: 130px;
+margin-top:165px;
+margin-bottom: -165px;
 
-
-`
-const MainIcons = styled.div`
-display: flex;
-flex-direction: column;
-height: 50%;
-justify-content: space-evenly;
-position: relative;
-bottom: 60px;
 `
 const NavBar = ({
 
 }) => {
     return <CtrlCont>
-    
-                
-                <IconCont>
                 <Logo src="/Logo.png"/>
-                    <MainIcons>
+                <IconCont>
                     <Icon src="/Home_Icon.svg"/>
                     <Icon src="/Task_Icon.svg"/>
                     <Icon src="/Chat_Icon.svg"/>
                     <Icon src="/Members_Icon.svg"/>
                     <Icon src="/search.svg"/>
-                    </MainIcons>
-                    <SetIcon src="/Settings_Icon.svg"></SetIcon>
                 </IconCont>
-                
-    
+                <SetIcon src="/Settings_Icon.svg"></SetIcon>
             </CtrlCont>   
 }
 export default NavBar;
