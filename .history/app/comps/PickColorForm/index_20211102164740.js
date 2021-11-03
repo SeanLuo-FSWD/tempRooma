@@ -155,7 +155,7 @@ const PickColorForm = ({
                     
                 </ColorCont>
                 <Btnarea>
-                    <Button routeTo="/home"
+                    <Button 
                         title="Next"
                         width="158px"
                         height="70px"

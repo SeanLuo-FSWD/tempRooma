@@ -2,7 +2,8 @@ import Head from 'next/head'
 import styled from 'styled-components';
 import * as React from 'react';
 import Tutorial from '../comps/Tutorial';
-import JoinFrom from '../comps/JoinForm';
+import PickColorForm from '../comps/PickColorForm';
+
 
 
 const MainCont = styled.div`
@@ -21,10 +22,9 @@ justify-content:center;
 
 const LogoCont = styled.img`
 width: 100px;
-margin: 20px 20px 0px 30px;
+margin: 20px;
 position:absolute;
 top: 10px;
-
 `
 
 
@@ -34,8 +34,7 @@ flex:1;
 `
 
 
-
-export default function Join() {
+export default function Login() {
 
   
   return (
@@ -43,15 +42,15 @@ export default function Join() {
     <MainCont>
         
         <LeftCont>
-        <LogoCont src="/Mainlogo.png"/>
+        <LogoCont src="/Mainlogo.svg"/>
              <Tutorial 
-                chead="Join" 
-                bhead=" with your Roommates" 
-                para="Create a new room for your roommates or join automatically by getting a code" 
-                animation="/Join-animation.svg"/>
+                chead="Pick" 
+                bhead=" your color" 
+                para="Pick your personal color for the schedule and start distributing your chores and record important events" 
+                animation="/pick-a-color-animation.svg"/>
         </LeftCont>
         <RightCont>
-            <JoinFrom></JoinFrom>
+            <PickColorForm></PickColorForm>
         </RightCont>
 
       

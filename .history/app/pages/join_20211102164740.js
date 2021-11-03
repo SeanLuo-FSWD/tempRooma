@@ -21,10 +21,9 @@ justify-content:center;
 
 const LogoCont = styled.img`
 width: 100px;
-margin: 20px 20px 0px 30px;
+margin: 20px;
 position:absolute;
 top: 10px;
-
 `
 
 
@@ -35,7 +34,7 @@ flex:1;
 
 
 
-export default function Join() {
+export default function Login() {
 
   
   return (
@@ -43,7 +42,7 @@ export default function Join() {
     <MainCont>
         
         <LeftCont>
-        <LogoCont src="/Mainlogo.png"/>
+        <LogoCont src="/Mainlogo.svg"/>
              <Tutorial 
                 chead="Join" 
                 bhead=" with your Roommates" 

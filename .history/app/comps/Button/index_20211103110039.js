@@ -30,15 +30,13 @@ border="none",
 bgcolor="#724FE9",
 fontcolor="white",
 fontSize="20px",
-fontWeight="700",
-routeTo="/pick_a_color",
+fontWeight="700"
 }) => {
 
   const router = useRouter();
    return <Cont>
      
      <Buttonstyle 
-     onClick={()=>router.push(routeTo)}
      className="opensans"
      width={width}
      height={height}

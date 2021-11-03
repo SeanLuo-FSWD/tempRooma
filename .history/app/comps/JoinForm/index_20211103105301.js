@@ -69,7 +69,6 @@ const JoinFrom = ({
                 <Para className="opensans">Get started by creating a new team and invite your roommates.</Para>
                 <Bot>
                     <Button 
-                    onClick={()=>router.push(routeToColor)}
                         title="Get Started"
                         width="178px"
                         height="48px"
