@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styled from 'styled-components';
 import * as React from 'react';
 import Button from '../../comps/Button'
+import {useRouter} from 'next/router';
 
 
 const MainCont = styled.div`
@@ -111,6 +112,7 @@ const PickColorForm = ({
     onBtn5=()=>{},
     onBtn6=()=>{},
 }) => {
+    const router = useRouter();
     return <MainCont>
             <Wrap>
                 <Heading className="ubuntu">Welcome to Rooma</Heading>
@@ -154,7 +156,9 @@ const PickColorForm = ({
                 </ColorCont>
                 <Btnarea>
                     <Button 
-                        routeTo="/home"
+                        onClick={()=>{
+                            router.push("/create_profile")
+                        }}
                         title="Next"
                         width="158px"
                         height="70px"
