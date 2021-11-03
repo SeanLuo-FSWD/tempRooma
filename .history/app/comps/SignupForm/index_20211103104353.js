@@ -152,8 +152,6 @@ const LoginForm = ({
 marginbottom1="25px",
 marginbottom2="25px",
 marginbottom3="10px",
-routeToJoin="/join",
-routeToLogin="/",
 
 
 
@@ -182,11 +180,11 @@ routeToLogin="/",
        
 
         {/* Login Button */}
-        <LoginButton onClick={()=>router.push(routeToJoin)} className="opensans">Sign up</LoginButton>
+        <LoginButton className="opensans">Sign up</LoginButton>
 
         <Signup className="opensans">
        <Text> Already have an account?</Text>
-        <Link2 onClick={()=>router.push(routeToLogin)}>Sign In</Link2>
+        <Link2>Sign In</Link2>
         </Signup>
 
 

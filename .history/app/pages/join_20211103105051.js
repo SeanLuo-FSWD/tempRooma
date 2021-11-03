@@ -24,7 +24,6 @@ width: 100px;
 margin: 20px 20px 0px 30px;
 position:absolute;
 top: 10px;
-
 `
 
 
@@ -35,7 +34,7 @@ flex:1;
 
 
 
-export default function Join() {
+export default function Login() {
 
   
   return (

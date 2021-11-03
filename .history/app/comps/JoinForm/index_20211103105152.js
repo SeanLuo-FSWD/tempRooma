@@ -59,17 +59,14 @@ width: 100%;
 
 
 const JoinFrom = ({
-    routeToColor="/pick_a_color",
-    
+
 }) => {
-    const router = useRouter();
     return <MainCont>
             <Cont>
                 <Heading className="opensans">Let's Get Started</Heading>
                 <Para className="opensans">Get started by creating a new team and invite your roommates.</Para>
                 <Bot>
                     <Button 
-                    onClick={()=>router.push(routeToColor)}
                         title="Get Started"
                         width="178px"
                         height="48px"

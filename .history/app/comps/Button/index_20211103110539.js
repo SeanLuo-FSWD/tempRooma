@@ -31,7 +31,6 @@ bgcolor="#724FE9",
 fontcolor="white",
 fontSize="20px",
 fontWeight="700",
-onClick=()=>{},
 routeTo="/pick_a_color",
 }) => {
 
@@ -50,7 +49,6 @@ routeTo="/pick_a_color",
     fontcolor={fontcolor}
     fontSize={fontSize}
     fontWeight={fontWeight}
-    onClick={onClick}
      >{title}</Buttonstyle>
     </Cont>
     

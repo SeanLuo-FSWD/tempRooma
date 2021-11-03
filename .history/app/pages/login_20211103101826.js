@@ -2,40 +2,43 @@ import Head from 'next/head'
 import styled from 'styled-components';
 import * as React from 'react';
 import Tutorial from '../comps/Tutorial';
-import JoinFrom from '../comps/JoinForm';
+import LoginForm from '../comps/LoginForm'
+import {useState} from 'react';
+
 
 
 const MainCont = styled.div`
-display:flex;
-width:100vw;
-height:100vh;
+  display:flex;
+  width:100vw;
+  height:100vh;
 
 `
+
+
+
 const LeftCont = styled.div`
 display: flex;
 flex-direction: column;
 flex:1;
 background-color: #F6F6FE;
 justify-content:center;
+height: 100%;
 `
-
 const LogoCont = styled.img`
 width: 100px;
-margin: 20px 20px 0px 30px;
 position:absolute;
+margin-left: 10px;
 top: 10px;
 
 `
-
-
 const RightCont = styled.div`
 display:flex;
 flex:1;
+
+
 `
 
-
-
-export default function Join() {
+export default function Login() {
 
   
   return (
@@ -44,14 +47,10 @@ export default function Join() {
         
         <LeftCont>
         <LogoCont src="/Mainlogo.png"/>
-             <Tutorial 
-                chead="Join" 
-                bhead=" with your Roommates" 
-                para="Create a new room for your roommates or join automatically by getting a code" 
-                animation="/Join-animation.svg"/>
+             <Tutorial/>
         </LeftCont>
         <RightCont>
-            <JoinFrom></JoinFrom>
+            <LoginForm/>
         </RightCont>
 
       
