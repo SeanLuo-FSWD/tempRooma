@@ -29,7 +29,8 @@ border="none",
 bgcolor="#724FE9",
 fontcolor="white",
 fontSize="20px",
-fontWeight="700"
+fontWeight="700",
+onClick=()=>{},
 }) => {
    return <Cont>
      <Buttonstyle 
@@ -43,6 +44,7 @@ fontWeight="700"
     fontcolor={fontcolor}
     fontSize={fontSize}
     fontWeight={fontWeight}
+    onClick={onClick}
      >{title}</Buttonstyle>
     </Cont>
     
