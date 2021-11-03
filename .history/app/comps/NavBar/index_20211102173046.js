@@ -31,7 +31,6 @@ height: 100%;
 position: relative;
 
 
-
 `
 const Icon = styled.img`
 width: 30px;
@@ -52,8 +51,6 @@ display: flex;
 flex-direction: column;
 height: 50%;
 justify-content: space-evenly;
-position: relative;
-bottom: 60px;
 `
 const NavBar = ({
 

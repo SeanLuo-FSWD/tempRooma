@@ -27,16 +27,7 @@ flex-grow:4;
 `
 const FirstCol = styled.div`
 display: flex;
-flex-direction:column;
-margin-top: 20px;
-flex-grow:4;
-
-`
-
-const SecondCol = styled.div`
-display: flex;
 flex-direciton:column;
-flex-grow: 1;
 `
 
 const RightCont = styled.div`
@@ -60,8 +51,6 @@ export default function Home (){
     <NavBar/>
     </LeftCont>
     <MiddleCont>
-    
-    <FirstCol>
     <Greeting
     width="250px"
     height="100px"
@@ -69,25 +58,18 @@ export default function Home (){
     ps="Here’s your schedule this week"
     visibility="visible"
     />
-    
     <Reminder
     heading="Today"
     visibility="hidden"
     />
     <Completed/>
-    </FirstCol>
-    <SecondCol>
+    
     <WeeklyRewards
     src="/Avatar.png"
     user_name="Ester Howards"
     user_point="0 pts"
     />
-    </SecondCol>
-
     </MiddleCont>
-
-
-
     <RightCont>
       <CalendarComp/>
      <Event

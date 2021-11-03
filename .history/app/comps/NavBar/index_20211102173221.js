@@ -53,7 +53,7 @@ flex-direction: column;
 height: 50%;
 justify-content: space-evenly;
 position: relative;
-bottom: 60px;
+bottom: 100px;
 `
 const NavBar = ({
 

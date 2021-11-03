@@ -29,7 +29,7 @@ align-items:center;
 width: 100%;
 height: 100%;
 position: relative;
-
+bottom: 20px;
 
 
 `
@@ -52,8 +52,6 @@ display: flex;
 flex-direction: column;
 height: 50%;
 justify-content: space-evenly;
-position: relative;
-bottom: 60px;
 `
 const NavBar = ({
 

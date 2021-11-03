@@ -27,16 +27,8 @@ flex-grow:4;
 `
 const FirstCol = styled.div`
 display: flex;
-flex-direction:column;
-margin-top: 20px;
-flex-grow:4;
-
-`
-
-const SecondCol = styled.div`
-display: flex;
 flex-direciton:column;
-flex-grow: 1;
+flex-grow: 3;
 `
 
 const RightCont = styled.div`
@@ -75,19 +67,14 @@ export default function Home (){
     visibility="hidden"
     />
     <Completed/>
-    </FirstCol>
-    <SecondCol>
+    
     <WeeklyRewards
     src="/Avatar.png"
     user_name="Ester Howards"
     user_point="0 pts"
     />
-    </SecondCol>
-
+  </FirstCol>
     </MiddleCont>
-
-
-
     <RightCont>
       <CalendarComp/>
      <Event

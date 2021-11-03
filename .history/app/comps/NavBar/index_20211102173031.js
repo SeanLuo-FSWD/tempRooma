@@ -28,9 +28,6 @@ justify-content:center;
 align-items:center;
 width: 100%;
 height: 100%;
-position: relative;
-
-
 
 `
 const Icon = styled.img`
@@ -52,8 +49,6 @@ display: flex;
 flex-direction: column;
 height: 50%;
 justify-content: space-evenly;
-position: relative;
-bottom: 60px;
 `
 const NavBar = ({
 

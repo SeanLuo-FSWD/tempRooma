@@ -28,8 +28,7 @@ flex-grow:4;
 const FirstCol = styled.div`
 display: flex;
 flex-direction:column;
-margin-top: 20px;
-flex-grow:4;
+flex-grow:3;
 
 `
 
