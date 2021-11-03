@@ -34,7 +34,7 @@ flex:1;
 
 
 
-export default function Login() {
+export default function Join() {
 
   
   return (
