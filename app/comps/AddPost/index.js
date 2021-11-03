@@ -1,7 +1,7 @@
 import react, { Component } from 'react';
 import styled from 'styled-components';
 import Button from '../Button';
-import Switch from "react-switch";
+import ToggleBtn from '../ToggleBtn';
 
 
 const Cont = styled.div`
@@ -41,14 +41,18 @@ margin-left:40px
 const GroupOption = styled.div`
 display:flex;
 flex-direction:column;
-margin-right:100px;
+margin-right:50px;
 
 `
 const GroupTop = styled.div`
 display:flex;
 flex-direction:row;
+`
 
-
+const ToggleBox = styled.div`
+display:flex;
+margin-top:10px;
+margin-left:10px;
 `
 const AvatarBox = styled.div`
 display:flex;
@@ -104,7 +108,7 @@ const Avatar = styled.img`
 width:45px;
 height:45px;
 position:relative;
-left:90px;
+left:140px;
 top:-10px;
 margin-left:-20px;
 `
@@ -186,15 +190,9 @@ return<Cont>
     <GroupOption>
     <GroupTop>
     <Heading className="opensans">Post as group</Heading>
-    {/*
-    <Label>
-        <Switch
-           onChange={handleChange}
-           checked={checked}
-           className="react-switch"
-        />
-      </Label>
-      */}
+    <ToggleBox>
+    <ToggleBtn/>
+    </ToggleBox>
     </GroupTop>
     <AvatarBox>
       <Avatar

@@ -56,12 +56,6 @@ export default function Community() {
         <MainCont>
         <AddPost
         src="/Avatar.png"
-        /*handleChange={() =>{
-          ToggleBtn();
-        }} 
-        onChange={this.handleChange} 
-        checked={this.state.checked}
-        */
         />
         </MainCont>
     </Cont>
