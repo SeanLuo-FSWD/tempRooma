@@ -28,13 +28,12 @@ export default function Tester() {
 
             <FilterButton></FilterButton>
             <CommunityPost/>
-  
             <NavBar2></NavBar2>
        
 
-       
 
-    
+
+
         </MainCont>
   
   )
