@@ -51,8 +51,10 @@ export default function Home (){
   
   const HandleClick = () =>{
     if (buttonstate1===0){
-    setButtonState1(1); }
-
+    setButtonState1(1);
+  }else{
+    setButtonState1(0);
+  }
   }
 
   return (<MainCont>

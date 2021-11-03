@@ -29,22 +29,30 @@ visibility:${props=>props.visibility};
 text-align:center;
 margin-top:10px;
 `
+const MoreCont = styled.div`
+display:flex
+width:685px;
+height:45px;
+text-align:center;
+position:absolute;
+top:435px;
 
+`
 const More = styled.div`
 width:685px;
 text-align:center;
-position:absolute;
-top:400px;
 color:#7751E8;
 `
 const Divider = styled.hr`
 border-top: 1px solid #E8E8E8;
+
 `
 const Icon = styled.img`
 `
 const Reminder = ({
   heading="Today",
   visibility="visible",
+  onClick=()=>{},
 })=>{
 return<Cont>
   <CardCont>
@@ -58,7 +66,9 @@ return<Cont>
      date="5:00-7:00PM"
     />
     <DefMessage className="opensans" visibility={visibility}>Nothing is scheduled for today.</DefMessage>
-    <More className="opensans"><Divider/> More <Icon src="/down_arrow.png"/></More>
+    <MoreCont onClick={onClick}>
+    <More className="opensans"><Divider/>More <Icon src="/down_arrow.png"/></More>
+    </MoreCont>
   </CardCont>
 </Cont>
 }
