@@ -51,6 +51,7 @@ routeTo="/pick_a_color",
     fontSize={fontSize}
     fontWeight={fontWeight}
     onClick={onClick}
+    
      >{title}</Buttonstyle>
     </Cont>
     
