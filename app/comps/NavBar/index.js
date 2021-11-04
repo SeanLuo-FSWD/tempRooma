@@ -1,6 +1,7 @@
 
 import Image from 'next/image'
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 
 const CtrlCont = styled.div`
 display:flex;
@@ -53,12 +54,19 @@ bottom: -10px;
 `
 
 const NavBar = ({
+    routeToHome="/home",
+    routeToTask="",
+    routeToChat="",
+    routeToMembers="/members",
+    routeToCommunity="/community",
+    routeToSettings="/setting"
 
     onNavClick=()=>{},
     // NavBar useState function
     show=false
 
 }) => {
+
 
     if(show === false){
         return<></>
@@ -67,17 +75,28 @@ const NavBar = ({
     return <CtrlCont onClick={()=>{
         onNavClick();
     }}>
+
+    const router = useRouter();
+    return <CtrlCont>
+
           
               <IconCont>
                 <Logo src="/Logo.png"/>
                     <MainIcons>
+
                         <Icon src="/Home_Icon.svg"/>
                         <Icon src="/Task_Icon.svg"/>
                         <Icon src="/Chat_Icon.svg"/>
                         <Icon src="/Members_Icon.svg"/>
                         <Icon src="/search.svg"/>
+                    <Icon  onClick={()=>router.push(routeToHome)} src="/Home_Icon.svg"/>
+                    <Icon onClick={()=>router.push(routeToTask)} src="/Task_Icon.svg"/>
+                    <Icon onClick={()=>router.push(routeToChat)} src="/Chat_Icon.svg"/>
+                    <Icon onClick={()=>router.push(routeToMembers)} src="/Members_Icon.svg"/>
+                    <Icon onClick={()=>router.push(routeToCommunity)} src="/search.svg"/>
+
                     </MainIcons>
-                    <SetIcon src="/Settings_Icon.svg"></SetIcon>
+                    <SetIcon onClick={()=>router.push(routeToSettings)} src="/Settings_Icon.svg"></SetIcon>
                 </IconCont>
                 
             </CtrlCont>   
