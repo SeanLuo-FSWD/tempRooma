@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 import * as React from 'react';
 import {useState} from 'react';
-import NavBar from '../comps/NavBar'
+import NavBar from '../comps/NavBar';
+import NavBar2 from '../comps/NavBar2';
+// add navbar 2 
+
 import Greeting from '../comps/Greeting';
 import Reminder from '../comps/Reminder';
 import Completed from '../comps/Completed';
@@ -34,7 +37,20 @@ flex-direction:column;
 flex-grow:1;
 `
 
+// const HideNavBar = styled.div`
+// display:none;
+// `
+//change
+
+
 export default function Home (){
+
+  //NavBar onClick function
+  const [showNav2, setShowNav2] = useState(false)
+  const [showNav, setShowNav] = useState(true)
+
+
+
   // detect button clicked or not
   const [buttonstate1, setButtonState1] = useState(0);
   const [buttonstate2, setButtonState2] = useState(0);
@@ -70,9 +86,16 @@ export default function Home (){
     }
     }
   return (<MainCont>
+
     <LeftCont>
-    <NavBar/>
+      <NavBar 
+        show={showNav} 
+        onNavClick={()=>{setShowNav2(true);{setShowNav(false)}}}></NavBar>
+      <NavBar2 
+        show={showNav2} 
+        onNav2Click={()=>{setShowNav(true); {setShowNav2(false)}}}></NavBar2>
     </LeftCont>
+
     <MiddleCont>
     <Greeting
     width="250px"
