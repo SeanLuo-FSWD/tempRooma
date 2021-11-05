@@ -59,22 +59,22 @@ const NavBar = ({
     routeToChat="",
     routeToMembers="/members",
     routeToCommunity="/community",
-    routeToSettings="/setting"
+    routeToSettings="/setting",
 
-    onNavClick=()=>{},
+    // onNavClick=()=>{},
     // NavBar useState function
-    show=false
+    // show=false
 
 }) => {
+    
+  
+    // if(show === false){
+    //     return<></>
+    // }
 
-
-    if(show === false){
-        return<></>
-    }
-
-    return <CtrlCont onClick={()=>{
-        onNavClick();
-    }}>
+    // return <CtrlCont onClick={()=>{
+    //     onNavClick();
+    // }}> 
 
     const router = useRouter();
     return <CtrlCont>
@@ -83,12 +83,6 @@ const NavBar = ({
               <IconCont>
                 <Logo src="/Logo.png"/>
                     <MainIcons>
-
-                        <Icon src="/Home_Icon.svg"/>
-                        <Icon src="/Task_Icon.svg"/>
-                        <Icon src="/Chat_Icon.svg"/>
-                        <Icon src="/Members_Icon.svg"/>
-                        <Icon src="/search.svg"/>
                     <Icon  onClick={()=>router.push(routeToHome)} src="/Home_Icon.svg"/>
                     <Icon onClick={()=>router.push(routeToTask)} src="/Task_Icon.svg"/>
                     <Icon onClick={()=>router.push(routeToChat)} src="/Chat_Icon.svg"/>

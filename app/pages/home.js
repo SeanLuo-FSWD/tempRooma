@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import * as React from 'react';
 import {useState} from 'react';
 import NavBar from '../comps/NavBar';
-import NavBar2 from '../comps/NavBar2';
+// import NavBar2 from '../comps/NavBar2';
 // add navbar 2 
 
 import Greeting from '../comps/Greeting';
@@ -37,17 +37,13 @@ flex-direction:column;
 flex-grow:1;
 `
 
-// const HideNavBar = styled.div`
-// display:none;
-// `
-//change
 
 
 export default function Home (){
 
   //NavBar onClick function
-  const [showNav2, setShowNav2] = useState(false)
-  const [showNav, setShowNav] = useState(true)
+  // const [showNav2, setShowNav2] = useState(false)
+  // const [showNav, setShowNav] = useState(true)
 
 
 
@@ -89,11 +85,13 @@ export default function Home (){
 
     <LeftCont>
       <NavBar 
-        show={showNav} 
-        onNavClick={()=>{setShowNav2(true);{setShowNav(false)}}}></NavBar>
-      <NavBar2 
+        // show={showNav} 
+        // onNavClick={()=>{setShowNav2(true);{setShowNav(false)}}}
+        ></NavBar>
+      {/* <NavBar2 
         show={showNav2} 
-        onNav2Click={()=>{setShowNav(true); {setShowNav2(false)}}}></NavBar2>
+        onNav2Click={()=>{setShowNav(true); {setShowNav2(false)}}}
+        ></NavBar2> */}
     </LeftCont>
 
     <MiddleCont>
