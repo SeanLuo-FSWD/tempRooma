@@ -2,13 +2,6 @@ import react from 'react';
 import styled from 'styled-components';
 import Button from '../../comps/Button';
 
-const MainCont = styled.div`
-display:flex;
-flex-direction: column;
-justify-content:center;
-align-items:center;
-
-`
 
 const Cont = styled.div`
 display:flex;
@@ -126,10 +119,9 @@ justify-content: flex-end;
 const TabCont = styled.div`
 display:flex;
 flex-direction:row;
-min-width: 700px;
+max-width: 700px;
 align-items:center;
-justify-content: flex-end;
-margin-bottom: 25px;
+margin-bottom: 20px;s
 
 `
 const AddBtn = styled.div`
@@ -150,7 +142,7 @@ height:20px;
 const TaskComp = ({
 
 })=>{
-  return<MainCont>
+  return<Cont>
  <TabCont>
     <Button
     title="Garbage"
@@ -162,14 +154,44 @@ const TaskComp = ({
     fontcolor="#7751E8"
     fontSize="16px"
     fontWeight="400"
-    margin="15px"
+    />
+   <Button
+    title="Garbage"
+    width="120px"
+    height="40px"
+    borderRadius="18px"
+    border="solid 1.8px"
+    bgcolor="#ffffff"
+    fontcolor="#7751E8"
+    fontSize="16px"
+    fontWeight="400"
+    />
+    <Button
+    title="Garbage"
+    width="120px"
+    height="40px"
+    borderRadius="18px"
+    border="solid 1.8px"
+    bgcolor="#ffffff"
+    fontcolor="#7751E8"
+    fontSize="16px"
+    fontWeight="400"
+    />
+    <Button
+    title="Garbage"
+    width="120px"
+    height="40px"
+    borderRadius="18px"
+    border="solid 1.8px"
+    bgcolor="#ffffff"
+    fontcolor="#7751E8"
+    fontSize="16px"
+    fontWeight="400"
     />
     <AddBtn>
     <PlusIcon src="/plus.svg"/>
     </AddBtn>
   </TabCont>
-
-<Cont>
  <InputCont>
  <Input1 type="text" placeholder="Add New Task"/> <Input2 type="text" placeholder="Description"/>
  </InputCont>
@@ -225,6 +247,5 @@ const TaskComp = ({
 <Button title="Add" width="122px" margin="0px 40px 40px 0px"/>
 </ButCont>
   </Cont>
-  </MainCont>
 }
 export default TaskComp

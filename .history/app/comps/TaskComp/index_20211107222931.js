@@ -1,19 +1,11 @@
 import react from 'react';
 import styled from 'styled-components';
 import Button from '../../comps/Button';
-
-const MainCont = styled.div`
-display:flex;
-flex-direction: column;
-justify-content:center;
-align-items:center;
-
-`
+import AddPost from '../AddPost';
 
 const Cont = styled.div`
 display:flex;
 flex-direction:column;
-
 min-width: 700px;
 min-height: 650px;
 box-shadow: 0px 4.0061163902282715px 47.07186508178711px 0px #0000001C;
@@ -126,50 +118,13 @@ justify-content: flex-end;
 const TabCont = styled.div`
 display:flex;
 flex-direction:row;
-min-width: 700px;
-align-items:center;
-justify-content: flex-end;
-margin-bottom: 25px;
-
-`
-const AddBtn = styled.div`
-width:35px;
-height:35px;
-background-color:#7751E8;
-border-radius:20px;
-display:flex;
-justify-content:center;
-align-items:center;
-
-`
-const PlusIcon = styled.img`
-width:20px;
-height:20px;
-
+margin-left:40px
 `
 const TaskComp = ({
 
 })=>{
-  return<MainCont>
- <TabCont>
-    <Button
-    title="Garbage"
-    width="120px"
-    height="40px"
-    borderRadius="18px"
-    border="solid 1.8px"
-    bgcolor="#ffffff"
-    fontcolor="#7751E8"
-    fontSize="16px"
-    fontWeight="400"
-    margin="15px"
-    />
-    <AddBtn>
-    <PlusIcon src="/plus.svg"/>
-    </AddBtn>
-  </TabCont>
-
-<Cont>
+  return<Cont>
+ 
  <InputCont>
  <Input1 type="text" placeholder="Add New Task"/> <Input2 type="text" placeholder="Description"/>
  </InputCont>
@@ -225,6 +180,5 @@ const TaskComp = ({
 <Button title="Add" width="122px" margin="0px 40px 40px 0px"/>
 </ButCont>
   </Cont>
-  </MainCont>
 }
 export default TaskComp
