@@ -39,7 +39,7 @@ flex-direction:column;
 
 export default function Add_task() {
   const [buttonstate1, setButtonState1] = useState(0);
-
+  const [buttonstate5, setButtonState5] = useState(0);
   const EventHandleClick = () =>{
     if (buttonstate1===0){
     setButtonState1(1);
@@ -47,12 +47,34 @@ export default function Add_task() {
     setButtonState1(0);
   }
   }
+  const GlobalNavClick = () =>{
+    if (buttonstate5===0){
+    setButtonState5(1);
+  }else{
+    setButtonState5(0);
+  }
+  }
   
   return (
   
     <MainCont>
       <LeftCont>
-        <NavBar2 />
+      <NavBar2
+    onContClick={()=>{
+      GlobalNavClick();
+    }}
+    width={buttonstate5 === 1 ? '140px' : '288px'}
+    display={buttonstate5 === 1 ? 'none' : 'flex'}
+    displayLogo={buttonstate5 === 1 ? 'flex' : 'none'}
+    displayHome={buttonstate5 === 1 ? 'none' : 'block'}
+    displayTask={buttonstate5 === 1 ? 'none' : 'block'}
+    displayChat={buttonstate5 === 1 ? 'none' : 'block'}
+    displayMember={buttonstate5 === 1 ? 'none' : 'block'}
+    displayCommunity={buttonstate5 === 1 ? 'none' : 'block'}
+    displaySetting={buttonstate5 === 1 ? 'none' : 'block'}
+    alignItems={buttonstate5 === 1 ? 'center':'unset'}
+    justifyContent={buttonstate5 ===1 ? 'center':'space-even'}
+    />
       </LeftCont>
       <MiddleCont>
       <Greeting
