@@ -18,7 +18,7 @@ width:50px;
 height:50px;
 display:flex;
 position:relative;
-bottom: 120px;
+bottom: 90px;
 `
 
 const IconCont = styled.div`
@@ -32,25 +32,25 @@ position: relative;
 `
 
 const Icon = styled.img`
-width: 30px;
-height: 30px;
+width: 20px;
+height: 20px;
 `
 
 const SetIcon = styled.img`
-width: 30px;
-height: 30px;
+width: 20px;
+height: 20px;
 display:flex;
 position: relative;
-top: 130px;
+top: 115px;
 `
 
 const MainIcons = styled.div`
 display: flex;
 flex-direction: column;
-height: 50%;
+height: 55%;
 justify-content: space-evenly;
 position: relative;
-bottom: 60px;
+bottom: -10px;
 `
 
 const NavBar = ({
@@ -59,11 +59,26 @@ const NavBar = ({
     routeToChat="",
     routeToMembers="/members",
     routeToCommunity="/community",
-    routeToSettings="/setting"
+    routeToSettings="/setting",
+
+    // onNavClick=()=>{},
+    // NavBar useState function
+    // show=false
 
 }) => {
+    
+  
+    // if(show === false){
+    //     return<></>
+    // }
+
+    // return <CtrlCont onClick={()=>{
+    //     onNavClick();
+    // }}> 
+
     const router = useRouter();
     return <CtrlCont>
+
           
               <IconCont>
                 <Logo src="/Logo.png"/>
@@ -73,6 +88,7 @@ const NavBar = ({
                     <Icon onClick={()=>router.push(routeToChat)} src="/Chat_Icon.svg"/>
                     <Icon onClick={()=>router.push(routeToMembers)} src="/Members_Icon.svg"/>
                     <Icon onClick={()=>router.push(routeToCommunity)} src="/search.svg"/>
+
                     </MainIcons>
                     <SetIcon onClick={()=>router.push(routeToSettings)} src="/Settings_Icon.svg"></SetIcon>
                 </IconCont>

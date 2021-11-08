@@ -1,4 +1,3 @@
-
 import Image from 'next/image'
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
@@ -23,7 +22,6 @@ flex-direction: column;
 align-items:center;
 margin-left:13px;
 top:-70px;
-
 `
 
 const IconCont = styled.div`
@@ -45,7 +43,6 @@ flex-direction:row;
 align-items:center;
 margin-left:35px;
 margin-right:30px;
-
 `
 
 const SetIconCont = styled.div`
@@ -58,7 +55,6 @@ justify-content:${props=>props.justifyContent};
 align-items:center;
 margin-left:35px;
 margin-right:30px;
-
 `
 /*oepn nav:
 justify-content:space-even;
@@ -86,8 +82,8 @@ align-items:center;
 //items in the div's
 
 const Icon = styled.img`
-width: 30px;
-height: 30px;
+width: 20px;
+height: 20px;
 `
 
 const Title = styled.p`
@@ -108,7 +104,6 @@ font-size:25px;
 font-weight:700;
 margin-top:15px;
 margin-bottom:15px;
-
 `
 const BellIcon = styled.img`
 width:20px;

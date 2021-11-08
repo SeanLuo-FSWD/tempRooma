@@ -34,7 +34,16 @@ flex-direction:column;
 flex-grow:1;
 `
 
+
+
 export default function Home (){
+
+  //NavBar onClick function
+  // const [showNav2, setShowNav2] = useState(false)
+  // const [showNav, setShowNav] = useState(true)
+
+
+
   // detect button clicked or not
   const [buttonstate1, setButtonState1] = useState(0);
   const [buttonstate2, setButtonState2] = useState(0);
@@ -77,6 +86,7 @@ export default function Home (){
     }
     }
   return (<MainCont>
+
     <LeftCont>
     <NavBar2
     onContClick={()=>{
@@ -95,6 +105,7 @@ export default function Home (){
     justifyContent={buttonstate5 ===1 ? 'center':'space-even'}
     />
     </LeftCont>
+
     <MiddleCont>
     <Greeting
     width="250px"
