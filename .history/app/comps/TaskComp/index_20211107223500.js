@@ -2,13 +2,6 @@ import react from 'react';
 import styled from 'styled-components';
 import Button from '../../comps/Button';
 
-const MainCont = styled.div`
-display:flex;
-flex-direction: column;
-justify-content:center;
-align-items:center;
-
-`
 
 const Cont = styled.div`
 display:flex;
@@ -126,50 +119,82 @@ justify-content: flex-end;
 const TabCont = styled.div`
 display:flex;
 flex-direction:row;
-min-width: 700px;
-align-items:center;
-justify-content: flex-end;
-margin-bottom: 25px;
+max-width: 700px;
+justify-content: space-evenly;
+
 
 `
 const AddBtn = styled.div`
-width:35px;
-height:35px;
+width:30px;
+height:30px;
+margin:10px;
 background-color:#7751E8;
 border-radius:20px;
-display:flex;
-justify-content:center;
-align-items:center;
 
 `
 const PlusIcon = styled.img`
-width:20px;
-height:20px;
-
+width:13px;
+height:13px;
+margin-top:8px;
+margin-left:8px;
 `
 const TaskComp = ({
 
 })=>{
-  return<MainCont>
+  return<Cont>
  <TabCont>
     <Button
-    title="Garbage"
-    width="120px"
-    height="40px"
+    title="Roommates"
+    width="300px"
+    height="400px"
+    margin="10px"
     borderRadius="18px"
     border="solid 1.8px"
     bgcolor="#ffffff"
     fontcolor="#7751E8"
-    fontSize="16px"
+    fontSize="10px"
     fontWeight="400"
-    margin="15px"
+    />
+    <Button
+    title="Event"
+    width="87px"
+    height="27px"
+    margin="10px"
+    borderRadius="18px"
+    border="solid 1.8px"
+    bgcolor="#ffffff"
+    fontcolor="#7751E8"
+    fontSize="10px"
+    fontWeight="400"
+    />
+    <Button
+    title="School"
+    width="87px"
+    height="27px"
+    margin="10px"
+    borderRadius="18px"
+    border="solid 1.8px"
+    bgcolor="#ffffff"
+    fontcolor="#7751E8"
+    fontSize="10px"
+    fontWeight="400"
+    />
+    <Button
+    title="Resturants"
+    width="87px"
+    height="27px"
+    margin="10px"
+    borderRadius="18px"
+    border="solid 1.8px"
+    bgcolor="#ffffff"
+    fontcolor="#7751E8"
+    fontSize="10px"
+    fontWeight="400"
     />
     <AddBtn>
-    <PlusIcon src="/plus.svg"/>
+    <PlusIcon src="/w_add.png"/>
     </AddBtn>
   </TabCont>
-
-<Cont>
  <InputCont>
  <Input1 type="text" placeholder="Add New Task"/> <Input2 type="text" placeholder="Description"/>
  </InputCont>
@@ -225,6 +250,5 @@ const TaskComp = ({
 <Button title="Add" width="122px" margin="0px 40px 40px 0px"/>
 </ButCont>
   </Cont>
-  </MainCont>
 }
 export default TaskComp

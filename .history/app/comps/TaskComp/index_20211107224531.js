@@ -126,10 +126,8 @@ justify-content: flex-end;
 const TabCont = styled.div`
 display:flex;
 flex-direction:row;
-min-width: 700px;
+max-width: 700px;
 align-items:center;
-justify-content: flex-end;
-margin-bottom: 25px;
 
 `
 const AddBtn = styled.div`
@@ -162,7 +160,6 @@ const TaskComp = ({
     fontcolor="#7751E8"
     fontSize="16px"
     fontWeight="400"
-    margin="15px"
     />
     <AddBtn>
     <PlusIcon src="/plus.svg"/>

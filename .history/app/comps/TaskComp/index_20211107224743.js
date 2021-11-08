@@ -162,7 +162,7 @@ const TaskComp = ({
     fontcolor="#7751E8"
     fontSize="16px"
     fontWeight="400"
-    margin="15px"
+    margin="20px"
     />
     <AddBtn>
     <PlusIcon src="/plus.svg"/>

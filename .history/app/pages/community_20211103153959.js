@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styled from 'styled-components';
 import React from 'react';
 import NavBar from '../comps/NavBar';
-import AddPost from '../comps/AddPost';
+import AddPost from '../comps/AddPost'
 import {useState} from 'react';
 
 const Cont = styled.div`
