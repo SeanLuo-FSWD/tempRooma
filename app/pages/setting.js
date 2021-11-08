@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styled from 'styled-components';
 import React from 'react';
-import NavBar from '../comps/NavBar';
+import NavBar2 from '../comps/NavBar2';
 import Invite from '../comps/Invite';
 import SettingNavCont from '../comps/SettingNavCont';
 import {useState} from 'react';
@@ -34,7 +34,7 @@ const Holder = styled.div `
 export default function Home() {
 
   const [buttonstate1, setButtonState1] = useState(0);
-
+  const [buttonstate5, setButtonState5] = useState(0);
   const HandleClickButtonColor1 = () =>{
     setButtonState1(1);
   } 
@@ -50,10 +50,33 @@ export default function Home() {
   const HandleClickButtonColor5 = () =>{
     setButtonState1(5);
   } 
+  const GlobalNavClick = () =>{
+    if (buttonstate5===0){
+    setButtonState5(1);
+  }else{
+    setButtonState5(0);
+  }
+  }
+  
   return (
     <Cont>
       <GlbNav>
-        <NavBar></NavBar>
+      <NavBar2
+    onContClick={()=>{
+      GlobalNavClick();
+    }}
+    width={buttonstate5 === 1 ? '140px' : '288px'}
+    display={buttonstate5 === 1 ? 'none' : 'flex'}
+    displayLogo={buttonstate5 === 1 ? 'flex' : 'none'}
+    displayHome={buttonstate5 === 1 ? 'none' : 'block'}
+    displayTask={buttonstate5 === 1 ? 'none' : 'block'}
+    displayChat={buttonstate5 === 1 ? 'none' : 'block'}
+    displayMember={buttonstate5 === 1 ? 'none' : 'block'}
+    displayCommunity={buttonstate5 === 1 ? 'none' : 'block'}
+    displaySetting={buttonstate5 === 1 ? 'none' : 'block'}
+    alignItems={buttonstate5 === 1 ? 'center':'unset'}
+    justifyContent={buttonstate5 ===1 ? 'center':'space-even'}
+    />
         </GlbNav>
     <SetNav>
       <h2>Settings</h2>
