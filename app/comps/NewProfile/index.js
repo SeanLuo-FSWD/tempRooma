@@ -88,7 +88,7 @@ const NewProfile = ({
           fontSize="20px"
           fontWeight="700"
           onClick={()=>{
-            router.push("/home")
+            router.push("/")
         }}
           />
           <Button
@@ -102,7 +102,7 @@ const NewProfile = ({
             fontSize="20px"
             fontWeight="700"
             onClick={()=>{
-              router.push("/home")
+              router.push("/")
           }}
           />
         </Btnarea>

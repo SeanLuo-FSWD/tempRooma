@@ -150,7 +150,7 @@ font-weight: 700;
 const LoginForm = ({
 marginbottom1="25px",
 marginbottom2="10px",
-routeToHome="/home",
+routeToHome="/",
 routeToSignup="/signup",
 login="Login"
 
