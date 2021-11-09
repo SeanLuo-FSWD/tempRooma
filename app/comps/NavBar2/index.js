@@ -162,7 +162,7 @@ const NavBar2 = ({
                     <MainIcons alignItems={alignItems}>
                         <TabCont 
                          onClick={()=>{
-                            router.push("/home")
+                            router.push("/")
                         }}
                         >
                             <Icon src="/Home_Icon.svg"/>
@@ -178,7 +178,7 @@ const NavBar2 = ({
                         </TabCont>
                         <TabCont
                            onClick={()=>{
-                            router.push("/home")
+                            router.push("/")
                         }}
                         >
                             <Icon src="/Chat_Icon.svg"/>

@@ -153,7 +153,7 @@ marginbottom1="25px",
 marginbottom2="25px",
 marginbottom3="10px",
 routeToJoin="/join",
-routeToLogin="/",
+routeToLogin="/login",
 
 
 
